@@ -1,0 +1,18 @@
+# Install ufw
+sudo apt update
+sudo apt install ufw
+
+# Set default policies
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Allow specific TCP ports
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+
+# Enable ufw
+sudo ufw enable
+
+# Verify the rules
+sudo ufw status verbose
