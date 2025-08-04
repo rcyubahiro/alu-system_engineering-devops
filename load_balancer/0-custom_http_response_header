@@ -2,10 +2,10 @@
 
 # Update package list and install Apache
 apt-get update
-apt-get install -y apache2
+apt-get install -y nginx 
 
 # Create the HTML file with "Hello Holberton"
 echo "Hello Holberton" > /var/www/html/index.html
 
 # Start Apache service
-service apache2 start
+service nginx start
